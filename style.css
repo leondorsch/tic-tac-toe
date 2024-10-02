@@ -1,0 +1,51 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#content {
+    margin-top: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    width: 33%;
+    height: 33%;
+    text-align: center;
+    font-size: 2em;
+    border: 5px solid white; /* Weiße Innenlinien */
+    position: relative;
+}
+
+table, tr, td {
+    border-style: none;
+}
+
+td {
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:last-child {
+    border-right: none;
+}
