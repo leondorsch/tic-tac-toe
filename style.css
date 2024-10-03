@@ -49,3 +49,10 @@ tr:last-child td {
 td:last-child {
     border-right: none;
 }
+
+.winning-line {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    z-index: 10;
+}
