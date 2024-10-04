@@ -22,6 +22,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 td {
@@ -55,4 +56,25 @@ td:last-child {
     background-color: white;
     height: 5px;
     z-index: 10;
+}
+
+#restart-button {
+    background-color: #00B0EF; /* Farbe des Buttons */
+    color: white; /* Textfarbe */
+    border: none; /* Kein Rand */
+    padding: 10px 20px; /* Abstand innen */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Hand-Cursor bei Hover */
+    border-radius: 5px; /* Abgerundete Ecken */
+    margin-top: 20px; /* Abstand nach oben */
+}
+
+#restart-button:hover {
+    background-color: #008CBA; /* Dunklere Farbe bei Hover */
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
