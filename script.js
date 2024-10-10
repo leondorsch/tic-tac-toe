@@ -8,23 +8,26 @@ let fields = [
     null,
     null,
     null,
-];
+]; // array mit null für jedes feld
+
 const WINNING_COMBINATIONS = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // horizontal
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6], // diagonal
-];
-let currentPlayer = 'circle';
+]; // array mit allen möglichen Win-Combinations
+
+let currentPlayer = 'circle'; // erster spieler ist immer circle
 function init() {
     render();
-}
+} // funktion die beim laden der seite render aufruft und somit table erzeugt
+
 function render() {
     const contentDiv = document.getElementById('content');
     // Generate table HTML
     let tableHtml = '<table>';
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) { // for-schleife für table-reihe
         tableHtml += '<tr>';
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < 3; j++) { // for schleife für table-zelle
             const index = i * 3 + j;
             let symbol = '';
             if (fields[index] === 'circle') {
